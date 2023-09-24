@@ -1,0 +1,22 @@
+version: '2'
+services:
+  postgres-persistence-patterns:
+    container_name: postgres-persistence-patterns
+    build: ./postgres/
+    ports:
+     - 5432:5432
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+  pgadmin-persistence-patterns:
+    container_name: pgadmin-persistence-patterns
+    build: ./pgadmin/
+    ports:
+      - 80:80
+    environment:
+        PGADMIN_DEFAULT_EMAIL: test@postgresql.org
+        PGADMIN_DEFAULT_PASSWORD: postgres
+    links:
+      - postgres-persistence-patterns
+    logging:
+      driver: "none"

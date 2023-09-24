@@ -1,0 +1,22 @@
+version: '2'
+services:
+  postgres-perf:
+    container_name: postgres-perf
+    build: ./postgres/
+    ports:
+     - 5432:5432
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+  pgadmin-perf:
+    container_name: pgadmin-perf
+    build: ./pgadmin/
+    ports:
+      - 80:80
+    environment:
+        PGADMIN_DEFAULT_EMAIL: test@postgresql.org
+        PGADMIN_DEFAULT_PASSWORD: postgres
+    links:
+      - postgres-perf
+    logging:
+      driver: "none"

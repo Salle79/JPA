@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss,SSS} %-5p [%c] - %m%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <!-- Development -->
+    <!-- Hibernate statistics -->
+    <Logger name="org.hibernate.stat" level="debug"/>
+    
+    <!-- Slow queries -->
+    <Logger name="org.hibernate.SQL_SLOW" level="info"/>
+
+    <!-- SQL statements and parameters -->
+    <Logger name="org.hibernate.SQL" level="debug"/>
+    <Logger name="org.hibernate.orm.jdbc.bind" level="trace"/>
+    
+    <!-- 2nd level cache -->
+    <Logger name="org.hibernate.cache" level="debug"/>
+    
+    <Root level="info">
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+
+    
+    <!-- Production -->
+    <!-- <Logger name="org.hibernate" level = "error"/>
+
+    <Root level="info">
+      <AppenderRef ref="STDOUT"/>
+    </Root> -->
+  </Loggers>
+</Configuration>

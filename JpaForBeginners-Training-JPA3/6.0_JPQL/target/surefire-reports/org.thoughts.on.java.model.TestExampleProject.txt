@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.thoughts.on.java.model.TestExampleProject
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.164 sec
