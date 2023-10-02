@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Exercise-Repository" />
+        <module name="Exercise-DataAccessObject" />
+        <module name="Lecture-Builder" />
+        <module name="Exercise-Builder" />
+        <module name="Lecture-Repository" />
+        <module name="Exercise-ActiveRecord" />
+        <module name="Exercise-FluentInterface" />
+        <module name="Lecture-ActiveRecord" />
+        <module name="Lecture-FluentInterface" />
+        <module name="Lecture-DataAccessObject" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Solution-ActiveRecord" target="17" />
+      <module name="Solution-Builder" target="17" />
+      <module name="Solution-DataAccessObject" target="17" />
+      <module name="Solution-FluentInterface" target="17" />
+      <module name="Solution-Repository" target="17" />
+      <module name="Solutions" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="4.0_WorkingWithEntities" />
+        <module name="3.3_CustomizeMappings" />
+        <module name="2.3_Logging_EclipseLink" />
+        <module name="2.3_Logging_Hibernate" />
+        <module name="5.4_AssociationMappings_OneToOne" />
+        <module name="6.0_JPQL" />
+        <module name="3.1_BasicEntityMappings" />
+        <module name="3.2_GenerateIdentifierValues" />
+        <module name="3.5_DateAndTimestampMappings_JavaUtil" />
+        <module name="5.2_AssociationMappings_ManyToOne-OneToMany" />
+        <module name="2.2_Configuration" />
+        <module name="5.5_FetchTypes" />
+        <module name="2.1_Bootstrapping" />
+        <module name="5.4_AssociationMappings_OneToOne-OneToOne_SharedPrimaryKey" />
+        <module name="3.4_EnumMappings" />
+        <module name="5.2_AssociationMappings_ManyToOne" />
+        <module name="5.4_AssociationMappings_OneToOne-OneToOne" />
+        <module name="5.3_AssociationMappings-ManyToMany-ManyToMany" />
+        <module name="3.5_DateAndTimestampMappings_DateAndTimeApi" />
+        <module name="5.3_AssociationMappings-ManyToMany" />
+        <module name="5.2_AssociationMappings_OneToMany" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

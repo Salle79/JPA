@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.thorben.janssen.spring.data.TestRepositories" time="2.885" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/test-classes:/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/classes:/home/salle/.m2/repository/org/hibernate/orm/hibernate-jpamodelgen/6.2.2.Final/hibernate-jpamodelgen-6.2.2.Final.jar:/home/salle/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/salle/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/salle/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/salle/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/salle/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/salle/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/salle/.m2/repository/com/querydsl/querydsl-jpa/5.0.0/querydsl-jpa-5.0.0-jakarta.jar:/home/salle/.m2/repository/com/querydsl/querydsl-apt/5.0.0/querydsl-apt-5.0.0-jakarta.jar:/home/salle/.m2/repository/com/querydsl/querydsl-codegen/5.0.0/querydsl-codegen-5.0.0.jar:/home/salle/.m2/repository/com/querydsl/codegen-utils/5.0.0/codegen-utils-5.0.0.jar:/home/salle/.m2/repository/org/eclipse/jdt/ecj/3.26.0/ecj-3.26.0.jar:/home/salle/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/salle/.m2/repository/io/github/classgraph/classgraph/4.8.108/classgraph-4.8.108.jar:/home/salle/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/salle/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.1.0/spring-boot-starter-test-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter/3.1.0/spring-boot-starter-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.1.0/spring-boot-starter-logging-3.1.0.jar:/home/salle/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/home/salle/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/home/salle/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/home/salle/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/salle/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar:/home/salle/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/salle/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-test/3.1.0/spring-boot-test-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.1.0/spring-boot-test-autoconfigure-3.1.0.jar:/home/salle/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/salle/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/salle/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/home/salle/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/home/salle/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/salle/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/salle/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/home/salle/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/home/salle/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/salle/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/home/salle/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/salle/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/home/salle/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/home/salle/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar:/home/salle/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/salle/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/home/salle/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/salle/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/salle/.m2/repository/org/springframework/spring-core/6.0.9/spring-core-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-jcl/6.0.9/spring-jcl-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-test/6.0.9/spring-test-6.0.9.jar:/home/salle/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/salle/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-devtools/3.1.0/spring-boot-devtools-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar:/home/salle/.m2/repository/org/springframework/spring-context/6.0.9/spring-context-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-expression/6.0.9/spring-expression-6.0.9.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.1.0/spring-boot-autoconfigure-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.1.0/spring-boot-starter-data-jpa-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.1.0/spring-boot-starter-aop-3.1.0.jar:/home/salle/.m2/repository/org/springframework/spring-aop/6.0.9/spring-aop-6.0.9.jar:/home/salle/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.1.0/spring-boot-starter-jdbc-3.1.0.jar:/home/salle/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/salle/.m2/repository/org/springframework/spring-jdbc/6.0.9/spring-jdbc-6.0.9.jar:/home/salle/.m2/repository/org/hibernate/orm/hibernate-core/6.2.2.Final/hibernate-core-6.2.2.Final.jar:/home/salle/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/salle/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/salle/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/salle/.m2/repository/io/smallrye/jandex/3.0.5/jandex-3.0.5.jar:/home/salle/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/salle/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/salle/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/salle/.m2/repository/org/springframework/data/spring-data-jpa/3.1.0/spring-data-jpa-3.1.0.jar:/home/salle/.m2/repository/org/springframework/data/spring-data-commons/3.1.0/spring-data-commons-3.1.0.jar:/home/salle/.m2/repository/org/springframework/spring-orm/6.0.9/spring-orm-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-tx/6.0.9/spring-tx-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-aspects/6.0.9/spring-aspects-6.0.9.jar:/home/salle/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/salle/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/salle/.m2/repository/com/querydsl/querydsl-core/5.0.0/querydsl-core-5.0.0.jar:/home/salle/.m2/repository/com/mysema/commons/mysema-commons-lang/0.2.4/mysema-commons-lang-0.2.4.jar:/home/salle/.m2/repository/com/querydsl/querydsl-sql/5.0.0/querydsl-sql-5.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/salle/.sdkman/candidates/java/17.0.6-amzn/lib"/>
+    <property name="sun.java.command" value="/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/surefire/surefirebooter-20231001153839953_3.jar /home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/surefire 2023-10-01T15-38-39_906-jvmRun1 surefire-20231001153839953_1tmp surefire_0-20231001153839953_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/test-classes:/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/classes:/home/salle/.m2/repository/org/hibernate/orm/hibernate-jpamodelgen/6.2.2.Final/hibernate-jpamodelgen-6.2.2.Final.jar:/home/salle/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/salle/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/salle/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/salle/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/salle/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/salle/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/salle/.m2/repository/com/querydsl/querydsl-jpa/5.0.0/querydsl-jpa-5.0.0-jakarta.jar:/home/salle/.m2/repository/com/querydsl/querydsl-apt/5.0.0/querydsl-apt-5.0.0-jakarta.jar:/home/salle/.m2/repository/com/querydsl/querydsl-codegen/5.0.0/querydsl-codegen-5.0.0.jar:/home/salle/.m2/repository/com/querydsl/codegen-utils/5.0.0/codegen-utils-5.0.0.jar:/home/salle/.m2/repository/org/eclipse/jdt/ecj/3.26.0/ecj-3.26.0.jar:/home/salle/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/salle/.m2/repository/io/github/classgraph/classgraph/4.8.108/classgraph-4.8.108.jar:/home/salle/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/salle/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.1.0/spring-boot-starter-test-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter/3.1.0/spring-boot-starter-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.1.0/spring-boot-starter-logging-3.1.0.jar:/home/salle/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/home/salle/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/home/salle/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/home/salle/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/salle/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar:/home/salle/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/salle/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-test/3.1.0/spring-boot-test-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.1.0/spring-boot-test-autoconfigure-3.1.0.jar:/home/salle/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/salle/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/salle/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/home/salle/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/home/salle/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/salle/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/salle/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/home/salle/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/home/salle/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/salle/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/home/salle/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/home/salle/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/salle/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/home/salle/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/home/salle/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar:/home/salle/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/salle/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/home/salle/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/salle/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/salle/.m2/repository/org/springframework/spring-core/6.0.9/spring-core-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-jcl/6.0.9/spring-jcl-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-test/6.0.9/spring-test-6.0.9.jar:/home/salle/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/salle/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-devtools/3.1.0/spring-boot-devtools-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar:/home/salle/.m2/repository/org/springframework/spring-context/6.0.9/spring-context-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-expression/6.0.9/spring-expression-6.0.9.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.1.0/spring-boot-autoconfigure-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.1.0/spring-boot-starter-data-jpa-3.1.0.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.1.0/spring-boot-starter-aop-3.1.0.jar:/home/salle/.m2/repository/org/springframework/spring-aop/6.0.9/spring-aop-6.0.9.jar:/home/salle/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:/home/salle/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.1.0/spring-boot-starter-jdbc-3.1.0.jar:/home/salle/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/salle/.m2/repository/org/springframework/spring-jdbc/6.0.9/spring-jdbc-6.0.9.jar:/home/salle/.m2/repository/org/hibernate/orm/hibernate-core/6.2.2.Final/hibernate-core-6.2.2.Final.jar:/home/salle/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/salle/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/salle/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/salle/.m2/repository/io/smallrye/jandex/3.0.5/jandex-3.0.5.jar:/home/salle/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/salle/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/salle/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/salle/.m2/repository/org/springframework/data/spring-data-jpa/3.1.0/spring-data-jpa-3.1.0.jar:/home/salle/.m2/repository/org/springframework/data/spring-data-commons/3.1.0/spring-data-commons-3.1.0.jar:/home/salle/.m2/repository/org/springframework/spring-orm/6.0.9/spring-orm-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-tx/6.0.9/spring-tx-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar:/home/salle/.m2/repository/org/springframework/spring-aspects/6.0.9/spring-aspects-6.0.9.jar:/home/salle/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/salle/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/salle/.m2/repository/com/querydsl/querydsl-core/5.0.0/querydsl-core-5.0.0.jar:/home/salle/.m2/repository/com/mysema/commons/mysema-commons-lang/0.2.4/mysema-commons-lang-0.2.4.jar:/home/salle/.m2/repository/com/querydsl/querydsl-sql/5.0.0/querydsl-sql-5.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/salle"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/home/salle/.sdkman/candidates/java/17.0.6-amzn"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/target/surefire/surefirebooter-20231001153839953_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+10-LTS"/>
+    <property name="user.name" value="salle"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.0-84-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.6.10.1"/>
+    <property name="localRepository" value="/home/salle/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2023.2.2"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="29445"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.6+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testJpaRepo" classname="com.thorben.janssen.spring.data.TestRepositories" time="0.614">
+    <system-out><![CDATA[15:38:40.417 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.thorben.janssen.spring.data.TestRepositories]: TestRepositories does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:38:40.473 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.thorben.janssen.spring.data.Application for test class com.thorben.janssen.spring.data.TestRepositories
+15:38:40,351 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.7
+15:38:40,362 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:38:40,363 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+15:38:40,363 |-INFO in ch.qos.logback.classic.BasicConfigurator@420745d7 - Setting up default configuration.
+15:38:40,672 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@7e11ab3d - Adding [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/base.xml] to configuration watch list.
+15:38:40,673 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5fa47fea - URL [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/base.xml] is not of type file
+15:38:40,674 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@7e11ab3d - Adding [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+15:38:40,674 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5fa47fea - URL [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+15:38:40,676 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+15:38:40,676 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+15:38:40,676 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+15:38:40,677 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@7e11ab3d - Adding [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+15:38:40,677 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5fa47fea - URL [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/console-appender.xml] is not of type file
+15:38:40,679 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@7e11ab3d - Adding [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/file-appender.xml] to configuration watch list.
+15:38:40,679 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5fa47fea - URL [jar:file:/home/salle/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/file-appender.xml] is not of type file
+15:38:40,698 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [jmxConfigurator] in [ch.qos.logback.classic.LoggerContext]
+15:38:40,698 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+15:38:40,698 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+15:38:40,699 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+15:38:40,699 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:38:40,699 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:38:40,701 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:38:40,709 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+15:38:40,709 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+15:38:40,710 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:38:40,714 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1531175283 - setting totalSizeCap to 0 Bytes
+15:38:40,715 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1531175283 - Archive files will be limited to [10 MB] each.
+15:38:40,716 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1531175283 - Will use gz compression
+15:38:40,716 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1531175283 - Will use the pattern /tmp/spring.log.%d{yyyy-MM-dd}.%i for the active file
+15:38:40,729 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28f8e165 - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/spring.log.%d{yyyy-MM-dd}.%i.gz'.
+15:38:40,729 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28f8e165 - Roll-over at midnight.
+15:38:40,733 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@28f8e165 - Setting initial period to 2023-10-01T13:37:24.945Z
+15:38:40,736 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/spring.log
+15:38:40,736 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/spring.log]
+15:38:40,736 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+15:38:40,736 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@2392212b - Propagating INFO level on Logger[ROOT] onto the JUL framework
+15:38:40,736 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+15:38:40,736 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+15:38:40,737 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@545f80bf - End of configuration.
+15:38:40,737 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@66f66866 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-10-01T15:38:40.781+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : Starting TestRepositories using Java 17.0.6 with PID 29445 (started by salle in /home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories)
+2023-10-01T15:38:40.782+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : No active profile set, falling back to 1 default profile: "default"
+2023-10-01T15:38:40.963+02:00  INFO 29445 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-01T15:38:40.996+02:00  INFO 29445 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-10-01T15:38:41.215+02:00  INFO 29445 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-01T15:38:41.242+02:00  INFO 29445 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-10-01T15:38:41.244+02:00  INFO 29445 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-01T15:38:41.327+02:00  INFO 29445 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-01T15:38:41.396+02:00  INFO 29445 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-01T15:38:41.410+02:00  INFO 29445 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-01T15:38:41.539+02:00  INFO 29445 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64f4f12
+2023-10-01T15:38:41.540+02:00  INFO 29445 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-01T15:38:41.569+02:00  INFO 29445 --- [           main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@a3cba3a
+2023-10-01T15:38:41.722+02:00  INFO 29445 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-01T15:38:42.114+02:00  INFO 29445 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-01T15:38:42.122+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_game 
+       drop constraint if exists FKquj6n755j3k650vwhoabw44yu
+2023-10-01T15:38:42.134+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_game 
+       drop constraint if exists FK1kenmun90s7uhly5kkk9o6rsf
+2023-10-01T15:38:42.137+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_game 
+       drop constraint if exists FKikaihvc8m29y7fqtk5brfwk48
+2023-10-01T15:38:42.139+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_games 
+       drop constraint if exists FKhoasvgr0mq1tkj5308chmd97v
+2023-10-01T15:38:42.140+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_games 
+       drop constraint if exists FKuqqdoorh4jhfx6mqe3wsy5ni
+2023-10-01T15:38:42.142+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_players 
+       drop constraint if exists FKfmhm06fi40ak53r6gofvoyr44
+2023-10-01T15:38:42.143+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_players 
+       drop constraint if exists FKnrj3tbf7hev9t411s5nl0kppf
+2023-10-01T15:38:42.144+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists chess_game cascade
+2023-10-01T15:38:42.147+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists chess_player cascade
+2023-10-01T15:38:42.148+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists chess_tournament cascade
+2023-10-01T15:38:42.150+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists chess_tournament_games cascade
+2023-10-01T15:38:42.151+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists chess_tournament_players cascade
+2023-10-01T15:38:42.153+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists chess_game_seq
+2023-10-01T15:38:42.154+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists player_sequence
+2023-10-01T15:38:42.155+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists tournament_sequence
+2023-10-01T15:38:42.161+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create sequence chess_game_seq start with 1 increment by 50
+2023-10-01T15:38:42.163+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create sequence player_sequence start with 100 increment by 1
+2023-10-01T15:38:42.165+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create sequence tournament_sequence start with 100 increment by 50
+2023-10-01T15:38:42.168+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create table chess_game (
+        date date,
+        round integer not null,
+        version integer not null,
+        chess_tournament_id bigint,
+        id bigint not null,
+        player_black_id bigint,
+        player_white_id bigint,
+        primary key (id)
+    )
+2023-10-01T15:38:42.171+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create table chess_player (
+        birth_date date,
+        version integer not null,
+        id bigint not null,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    )
+2023-10-01T15:38:42.176+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create table chess_tournament (
+        end_date date,
+        start_date date,
+        version integer not null,
+        id bigint not null,
+        name varchar(255),
+        primary key (id)
+    )
+2023-10-01T15:38:42.184+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create table chess_tournament_games (
+        chess_tournament_id bigint not null,
+        games_id bigint not null unique,
+        primary key (chess_tournament_id, games_id)
+    )
+2023-10-01T15:38:42.189+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    create table chess_tournament_players (
+        chess_tournament_id bigint not null,
+        players_id bigint not null,
+        primary key (chess_tournament_id, players_id)
+    )
+2023-10-01T15:38:42.192+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_game 
+       add constraint FKquj6n755j3k650vwhoabw44yu 
+       foreign key (chess_tournament_id) 
+       references chess_tournament
+2023-10-01T15:38:42.194+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_game 
+       add constraint FK1kenmun90s7uhly5kkk9o6rsf 
+       foreign key (player_black_id) 
+       references chess_player
+2023-10-01T15:38:42.196+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_game 
+       add constraint FKikaihvc8m29y7fqtk5brfwk48 
+       foreign key (player_white_id) 
+       references chess_player
+2023-10-01T15:38:42.197+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_games 
+       add constraint FKhoasvgr0mq1tkj5308chmd97v 
+       foreign key (games_id) 
+       references chess_game
+2023-10-01T15:38:42.199+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_games 
+       add constraint FKuqqdoorh4jhfx6mqe3wsy5ni 
+       foreign key (chess_tournament_id) 
+       references chess_tournament
+2023-10-01T15:38:42.201+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_players 
+       add constraint FKfmhm06fi40ak53r6gofvoyr44 
+       foreign key (players_id) 
+       references chess_player
+2023-10-01T15:38:42.202+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists chess_tournament_players 
+       add constraint FKnrj3tbf7hev9t411s5nl0kppf 
+       foreign key (chess_tournament_id) 
+       references chess_tournament
+2023-10-01T15:38:42.205+02:00  INFO 29445 --- [           main] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-10-01T15:38:42.207+02:00  INFO 29445 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-01T15:38:42.297+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
+2023-10-01T15:38:42.305+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.306+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.346+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.369+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.370+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.377+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.378+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.426+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.427+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2023-10-01T15:38:42.467+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : Started TestRepositories in 1.919 seconds (process running for 2.488)
+2023-10-01T15:38:42.822+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : ... testJpaRepo ...
+2023-10-01T15:38:42.886+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.birth_date,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.version 
+    from
+        chess_player c1_0
+2023-10-01T15:38:42.899+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select c1_0.id,c1_0.birth_date,c1_0.first_name,c1_0.last_name,c1_0.version from chess_player c1_0, time: 20ms, rows: 4
+2023-10-01T15:38:43.030+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    delete 
+    from
+        chess_player 
+    where
+        id=? 
+        or id=? 
+        or id=? 
+        or id=?
+2023-10-01T15:38:43.035+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.birth_date,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.version 
+    from
+        chess_player c1_0
+2023-10-01T15:38:43.036+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select c1_0.id,c1_0.birth_date,c1_0.first_name,c1_0.last_name,c1_0.version from chess_player c1_0, time: 1ms, rows: 0
+2023-10-01T15:38:43.085+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    20615 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    239227 nanoseconds spent preparing 3 JDBC statements;
+    4248991 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    743085 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 8 collections);
+    7596070 nanoseconds spent executing 3 partial-flushes (flushing a total of 8 entities and 8 collections)
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCrudRepo" classname="com.thorben.janssen.spring.data.TestRepositories" time="0.041">
+    <system-out><![CDATA[2023-10-01T15:38:43.103+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : ... testCrudRepo ...
+2023-10-01T15:38:43.106+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        nextval('player_sequence')
+2023-10-01T15:38:43.120+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        chess_player
+        (birth_date,first_name,last_name,version,id) 
+    values
+        (?,?,?,?,?)
+2023-10-01T15:38:43.124+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.birth_date,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.version 
+    from
+        chess_player c1_0
+2023-10-01T15:38:43.126+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select c1_0.id,c1_0.birth_date,c1_0.first_name,c1_0.last_name,c1_0.version from chess_player c1_0, time: 2ms, rows: 5
+2023-10-01T15:38:43.129+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    11980 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    242646 nanoseconds spent preparing 3 JDBC statements;
+    3122093 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    332937 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 8 collections);
+    7666716 nanoseconds spent executing 1 partial-flushes (flushing a total of 1 entities and 1 collections)
+}
+]]></system-out>
+  </testcase>
+  <testcase name="debugCrudRepo" classname="com.thorben.janssen.spring.data.TestRepositories" time="0.029">
+    <system-out><![CDATA[2023-10-01T15:38:43.144+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : ... debugCrudRepo ...
+2023-10-01T15:38:43.144+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        nextval('player_sequence')
+2023-10-01T15:38:43.147+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        chess_player
+        (birth_date,first_name,last_name,version,id) 
+    values
+        (?,?,?,?,?)
+2023-10-01T15:38:43.151+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    update
+        chess_player 
+    set
+        birth_date=?,
+        first_name=?,
+        last_name=?,
+        version=? 
+    where
+        id=? 
+        and version=?
+2023-10-01T15:38:43.154+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.birth_date,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.version 
+    from
+        chess_player c1_0
+2023-10-01T15:38:43.156+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select c1_0.id,c1_0.birth_date,c1_0.first_name,c1_0.last_name,c1_0.version from chess_player c1_0, time: 2ms, rows: 5
+2023-10-01T15:38:43.160+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    16261 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    211771 nanoseconds spent preparing 4 JDBC statements;
+    3438257 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    478113 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 8 collections);
+    7511872 nanoseconds spent executing 1 partial-flushes (flushing a total of 1 entities and 1 collections)
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testPagingRepo" classname="com.thorben.janssen.spring.data.TestRepositories" time="0.029">
+    <system-out><![CDATA[2023-10-01T15:38:43.174+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : ... testPagingRepo ...
+2023-10-01T15:38:43.177+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.birth_date,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.version 
+    from
+        chess_player c1_0 offset ? rows fetch first ? rows only
+2023-10-01T15:38:43.178+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select c1_0.id,c1_0.birth_date,c1_0.first_name,c1_0.last_name,c1_0.version from chess_player c1_0 offset ? rows fetch first ? rows only, time: 1ms, rows: 0
+2023-10-01T15:38:43.184+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(c1_0.id) 
+    from
+        chess_player c1_0
+2023-10-01T15:38:43.185+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select count(c1_0.id) from chess_player c1_0, time: 1ms, rows: 1
+2023-10-01T15:38:43.190+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    13448 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    165104 nanoseconds spent preparing 2 JDBC statements;
+    1870923 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    8345 nanoseconds spent executing 2 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCustomRepo" classname="com.thorben.janssen.spring.data.TestRepositories" time="0.027">
+    <system-out><![CDATA[2023-10-01T15:38:43.205+02:00  INFO 29445 --- [           main] c.t.j.spring.data.TestRepositories       : ... testCustomRepo ...
+2023-10-01T15:38:43.206+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        nextval('player_sequence')
+2023-10-01T15:38:43.209+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        chess_player
+        (birth_date,first_name,last_name,version,id) 
+    values
+        (?,?,?,?,?)
+2023-10-01T15:38:43.211+02:00 DEBUG 29445 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.birth_date,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.version 
+    from
+        chess_player c1_0
+2023-10-01T15:38:43.213+02:00 DEBUG 29445 --- [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select c1_0.id,c1_0.birth_date,c1_0.first_name,c1_0.last_name,c1_0.version from chess_player c1_0, time: 2ms, rows: 5
+2023-10-01T15:38:43.217+02:00  INFO 29445 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    12933 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    121213 nanoseconds spent preparing 3 JDBC statements;
+    2419825 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    454029 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 8 collections);
+    2042924 nanoseconds spent executing 1 partial-flushes (flushing a total of 1 entities and 1 collections)
+}
+]]></system-out>
+  </testcase>
+</testsuite>

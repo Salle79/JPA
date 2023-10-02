@@ -1,0 +1,8 @@
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/model/ChessPlayer.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/repository/ChessPlayerJpaRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/model/ChessGame.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/repository/ChessPlayerCustomRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/repository/ChessPlayerCrudRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/model/ChessTournament.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/repository/ChessPlayerPagingRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataRepositories/src/main/java/com/thorben/janssen/spring/data/Application.java

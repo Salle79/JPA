@@ -1,0 +1,12 @@
+com/thorben/janssen/spring/data/model/QChessTournament.class
+com/thorben/janssen/spring/data/model/ChessPlayer.class
+com/thorben/janssen/spring/data/repository/PlayerFragmentRepositoryImpl.class
+com/thorben/janssen/spring/data/model/ChessGame.class
+com/thorben/janssen/spring/data/model/QChessGame.class
+com/thorben/janssen/spring/data/Application.class
+com/thorben/janssen/spring/data/repository/ChessPlayerRepository.class
+com/thorben/janssen/spring/data/model/ChessTournament.class
+com/thorben/janssen/spring/data/model/QChessPlayer.class
+com/thorben/janssen/spring/data/repository/ChessGameRepository.class
+com/thorben/janssen/spring/data/repository/PlayerFragmentRepository.class
+com/thorben/janssen/spring/data/repository/ChessTournamentRepository.class

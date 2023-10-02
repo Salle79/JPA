@@ -1,0 +1,12 @@
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/model/ChessGame.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/Application.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/repository/PlayerFragmentRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/target/generated-sources/java/com/thorben/janssen/spring/data/model/QChessTournament.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/model/ChessTournament.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/repository/ChessGameRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/target/generated-sources/java/com/thorben/janssen/spring/data/model/QChessGame.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/model/ChessPlayer.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/repository/ChessPlayerRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/repository/ChessTournamentRepository.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/src/main/java/com/thorben/janssen/spring/data/repository/PlayerFragmentRepositoryImpl.java
+/home/salle/workspace/thorsen/JPA/JPA-advanced-multi/SpringDataJpaQueryDSL/target/generated-sources/java/com/thorben/janssen/spring/data/model/QChessPlayer.java
